@@ -17,7 +17,7 @@ resource "aws_launch_configuration" "fawaz-tfe-es" {
     db_password          = var.db_pass
     dns_hostname         = var.dns_hostname
     dns_zonename         = var.dns_zonename
-    redis                = aws_elasticache_cluster.example.cluster_address
+    redis                = aws_elasticache_cluster.example.cache_nodes.0.address #aws_elasticache_cluster.redis.cache_nodes.0.address
     redis_pass           = var.redis_pass
   })
 

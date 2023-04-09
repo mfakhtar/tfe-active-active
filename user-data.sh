@@ -60,13 +60,11 @@ cat > /tmp/tfe_settings.json <<EOF
     "value": "6379"
     },
     "redis_use_password_auth" : {
-    "value": "1"
+    "value": "0"
     },
-    "redis_pass" : {
-    "value": "${redis_pass}"
-    },
+    "redis_pass" : {},
     "redis_use_tls" : {
-    "value": "1"
+    "value": "0"
     }
 }
 EOF
