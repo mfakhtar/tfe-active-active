@@ -3,12 +3,15 @@
 This repository contains Terraform code to deploy the following infrastructure on AWS:
 
 - 1 VPC
-- 3 Subnets
+- 3 Public Subnets
+- 3 Private Subnets
 - 1 Internet Gateway
-- 2 Security Groups
-- 1 EC2 instance
+- 1 Security Groups
+- 1 ASG
+- 1 ALB
 - 1 S3 bucket
 - EC2 instance role to connect to S3
+- 1 RDS
 - AWS DB Subnet Group
 - 1 Key.pem
 
